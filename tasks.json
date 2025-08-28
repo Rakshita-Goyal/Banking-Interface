@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Bank Project",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "sqlite-amalgamation-3500400/sqlite3.c",
+        "-Isqlite-amalgamation-3500400",
+        "-o", "bank.exe",
+        "-lws2_32"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
